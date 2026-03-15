@@ -1,71 +1,164 @@
 # FitFunda Performance Dashboard
 
-A modern, highly responsive, and interactive performance tracking dashboard built with React and Vite. This project provides a clean, premium, and dynamic interface for visualizing fitness activity, tracking challenge progress, and managing runner profiles.
+A responsive and interactive **fitness performance dashboard** built
+using **React and Vite**.\
+The dashboard helps visualize user activity, track challenge progress,
+and manage runner profiles through a clean and modern interface.
 
-## ✨ Features
+------------------------------------------------------------------------
 
-- **Runner Profile Management**: Displays runner details, current challenge tier, and membership status with interactive profile editing and activity logging actions.
-- **Dynamic Circular Progress**: A custom-built SVG circular progress bar with smooth CSS-based animations to visualize distance tracked vs. target goal.
-- **Interactive Activity Chart**: A toggleable weekly overview chart allowing users to seamlessly switch between "Distance" and "Time" metrics.
-- **Global Leaderboard & Stats**: Live standings, dynamic next-rank distance tracking, and quick insights into pace, calorie burn, and active days.
-- **Gamified Achievements System**: A beautifully designed recent badges section with interactive micro-animations and tactile hover states.
-- **Fully Responsive Layout**: An adaptive CSS Grid & Flexbox architecture that scales perfectly from large widescreen monitors down to mobile devices without compromising aesthetics.
-- **Premium UI/UX Quality**: Uses modern design tokens, subtle shadows, glass-like styling, and custom SVG icons (powered by `lucide-react`) for a sophisticated look.
+# Features
 
-## 🗂️ Project Structure
+## Runner Profile Management
 
-The UI is logically organized into modular React components under `src/components`:
+Displays runner information including challenge tier and membership
+status.\
+Includes actions for editing profiles and logging activities.
 
-- \`Dashboard.jsx\` - The main grid layout and data container wrapping all other pieces.
-- \`RunnerInfoCard.jsx\` - The top-left header profile card with active call-to-action buttons.
-- \`ProgressSection.jsx\` - The challenge distance tracker alongside the animated circular SVG component.
-- \`CircularProgress.jsx\` - The underlying smooth-animating SVG ring for visualizing percentage completion.
-- \`WeeklyActivityChart.jsx\` - The bar chart displaying daily activity patterns with interactive view toggles.
-- \`LeaderboardCard.jsx\` - Summary of global rankings and distance needed to rank up.
-- \`QuickStatsCard.jsx\` - Small badge-like summaries (Pace, Calories, Active Days).
-- \`RecentAchievements.jsx\` - A gallery of unlocked gamification badges with tactile push interactions.
+## Circular Progress Tracking
 
-## 🚀 Getting Started
+Custom SVG-based circular progress component used to visualize
+**distance tracked vs target goal** with smooth animations.
 
-### Prerequisites
+## Weekly Activity Chart
 
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Interactive weekly chart that allows users to toggle between: -
+Distance - Time
 
-### Installation
+## Leaderboard and Statistics
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yogesh968/vranta_fit_funda.git
-   cd fitfunda
-   ```
+Shows global rankings along with: - Distance required to reach the next
+rank - Quick performance insights such as pace, calories burned, and
+active days.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Achievements System
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+Displays recently unlocked badges with interactive hover effects.
 
-4. **Open your browser:**
-   Navigate to `http://localhost:5173` to see the application running.
+## Responsive Layout
 
-## 🛠️ Technology Stack
+The UI uses **CSS Grid and Flexbox** to ensure the layout adapts across
+devices including desktops, tablets, and mobile screens.
 
-- **Framework**: React 18
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS (with custom utility classes in `index.css`)
-- **Icons**: Lucide React 
+## Modern UI Design
 
-## 🎨 Design Philosophy
+The interface includes: - subtle shadows - glass-style components -
+custom icons from `lucide-react`
 
-This dashboard strictly adheres to modern web design principles:
-- **Tactile Responses**: All buttons and actionable elements execute a subtle scale down (`active:scale-[0.98]`) to mimic realistic physical buttons.
-- **Refined Colors**: Strategic use of Indigo and Slate palettes rather than generic defaults to achieve a professional administrative feel.
-- **Spatial Consistency**: Uniform padding and rhythm enforced through global CSS grid and flex configurations.
+------------------------------------------------------------------------
 
-## 🤝 Contribution
+# Project Structure
 
-Feel free to open an issue or submit a pull request if you want to help improve the dashboard functionality or UI!
+The application is divided into reusable React components located in
+`src/components`.
+
+    src/
+     ├── components/
+     │   ├── Dashboard.jsx
+     │   ├── RunnerInfoCard.jsx
+     │   ├── ProgressSection.jsx
+     │   ├── CircularProgress.jsx
+     │   ├── WeeklyActivityChart.jsx
+     │   ├── LeaderboardCard.jsx
+     │   ├── QuickStatsCard.jsx
+     │   └── RecentAchievements.jsx
+
+## Component Overview
+
+**Dashboard.jsx**\
+Main layout component that organizes the dashboard grid and integrates
+all sections.
+
+**RunnerInfoCard.jsx**\
+Displays runner profile information and action buttons.
+
+**ProgressSection.jsx**\
+Shows challenge progress with the circular progress component.
+
+**CircularProgress.jsx**\
+SVG component used to render animated progress rings.
+
+**WeeklyActivityChart.jsx**\
+Bar chart showing weekly activity data with toggle controls.
+
+**LeaderboardCard.jsx**\
+Displays global ranking and distance required to move up.
+
+**QuickStatsCard.jsx**\
+Small statistic cards showing pace, calories, and active days.
+
+**RecentAchievements.jsx**\
+Displays recently unlocked badges.
+
+------------------------------------------------------------------------
+
+# Getting Started
+
+## Prerequisites
+
+Install **Node.js** on your system.
+
+https://nodejs.org/
+
+------------------------------------------------------------------------
+
+## Installation
+
+Clone the repository
+
+``` bash
+git clone https://github.com/yogesh968/vranta_fit_funda.git
+cd fitfunda
+```
+
+Install dependencies
+
+``` bash
+npm install
+```
+
+Start the development server
+
+``` bash
+npm run dev
+```
+
+Open the application
+
+http://localhost:5173
+
+------------------------------------------------------------------------
+
+# Technology Stack
+
+  Technology     Usage
+  -------------- ---------------------------
+  React 18       Frontend framework
+  Vite           Build tool and dev server
+  Tailwind CSS   Styling
+  Lucide React   Icons
+
+------------------------------------------------------------------------
+
+# Design Principles
+
+## Responsive Design
+
+Built using flexible layout systems to support multiple screen sizes.
+
+## Component-Based Architecture
+
+The UI is structured into reusable components to improve
+maintainability.
+
+## Clean Visual Hierarchy
+
+Consistent spacing, typography, and color usage ensure readability and
+usability.
+
+------------------------------------------------------------------------
+
+# Contribution
+
+Contributions are welcome.\
+You can open an issue or submit a pull request to improve the dashboard.
