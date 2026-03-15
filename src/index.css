@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  background-color: #FAFAFA;
+  color: #111827;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.panel {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* very subtle flat shadow */
+}
+
+/* Remove scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
